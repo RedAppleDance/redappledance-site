@@ -1,0 +1,1 @@
+console.log("Red Apple Dance Group website loaded.");
