@@ -1,27 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Red Apple Dance Group</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red Apple Dance Group | Red Apple Performing Arts, Inc.</title>
+  <meta
+    name="description"
+    content="Official website of Red Apple Performing Arts, Inc., the nonprofit organization operating the Red Apple Dance Group."
+  />
   <style>
-    body{
-      font-family: Arial;
-      text-align:center;
-      margin-top:100px;
-      background:#fafafa;
+    :root{
+      --red:#a61e22;
+      --red-dark:#7f1518;
+      --gold:#d4af37;
+      --cream:#faf7f2;
+      --text:#222222;
+      --muted:#666666;
+      --white:#ffffff;
+      --shadow:0 12px 30px rgba(0,0,0,0.10);
+      --radius:18px;
     }
+
+    *{box-sizing:border-box;}
+
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg, #fffaf6 0%, #f7f1e8 100%);
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
+      background:
+        linear-gradient(rgba(122,18,21,0.78), rgba(122,18,21,0.82)),
+        radial-gradient(circle at top, rgba(255,255,255,0.12), transparent 35%);
+    }
+
+    .card{
+      width:100%;
+      max-width:850px;
+      background:rgba(255,255,255,0.96);
+      border-radius:24px;
+      box-shadow:var(--shadow);
+      padding:42px 34px;
+      text-align:center;
+    }
+
+    .badge{
+      display:inline-block;
+      padding:8px 14px;
+      border-radius:999px;
+      background:#fff4d6;
+      color:#8a6510;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:0.4px;
+      text-transform:uppercase;
+      margin-bottom:18px;
+    }
+
     h1{
-      color:#c8102e;
-      font-size:48px;
+      margin:0;
+      color:var(--red);
+      font-size:clamp(34px, 6vw, 56px);
+      line-height:1.1;
+    }
+
+    .subtitle{
+      margin:14px auto 0;
+      font-size:20px;
+      color:var(--text);
+      max-width:680px;
+    }
+
+    .tagline{
+      margin:16px 0 0;
+      font-size:18px;
+      color:var(--muted);
+      letter-spacing:0.5px;
+    }
+
+    .about{
+      margin:28px auto 0;
+      max-width:700px;
+      font-size:17px;
+      line-height:1.7;
+      color:#444;
+    }
+
+    .actions{
+      margin-top:30px;
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 22px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:700;
+      transition:transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn-primary{
+      background:var(--red);
+      color:var(--white);
+      box-shadow:0 10px 20px rgba(166,30,34,0.22);
+    }
+
+    .btn-secondary{
+      background:var(--white);
+      color:var(--red);
+      border:1px solid #e7d7d7;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+    }
+
+    .verification-note{
+      margin-top:26px;
+      padding-top:20px;
+      border-top:1px solid #eadfdf;
+      font-size:15px;
+      color:var(--muted);
+    }
+
+    .verification-note strong{
+      color:var(--text);
     }
   </style>
 </head>
 <body>
+  <main class="hero">
+    <section class="card">
+      <div class="badge">Official Nonprofit Website</div>
 
-<h1>Red Apple Dance Group</h1>
+      <h1>Red Apple Dance Group</h1>
 
-<p>Official website coming soon</p>
+      <p class="subtitle">
+        Operated by Red Apple Performing Arts, Inc.
+      </p>
 
-<p>Dance • Inspire • Connect</p>
+      <p class="tagline">Dance • Inspire • Connect</p>
 
+      <div class="about">
+        Red Apple Performing Arts, Inc. is a nonprofit organization dedicated to promoting
+        cultural understanding, artistic excellence, and community connection through dance,
+        performance, and cultural programming.
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="/verification.html">View Verification Page</a>
+        <a class="btn btn-secondary" href="mailto:info@redappledance.org">Contact Us</a>
+      </div>
+
+      <div class="verification-note">
+        <strong>Official Domain:</strong> redappledance.org<br />
+        This website is the official web presence of Red Apple Performing Arts, Inc.
+      </div>
+    </section>
+  </main>
 </body>
 </html>
